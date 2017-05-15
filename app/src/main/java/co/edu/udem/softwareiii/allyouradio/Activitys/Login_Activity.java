@@ -1,4 +1,4 @@
-package co.edu.udem.softwareiii.allyouradio;
+package co.edu.udem.softwareiii.allyouradio.Activitys;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,8 +7,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import co.edu.udem.softwareiii.allyouradio.R;
 
 public class Login_Activity extends AppCompatActivity implements View.OnClickListener {
 

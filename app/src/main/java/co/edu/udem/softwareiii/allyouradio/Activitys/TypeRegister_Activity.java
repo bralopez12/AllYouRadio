@@ -1,25 +1,34 @@
-package co.edu.udem.softwareiii.allyouradio;
+package co.edu.udem.softwareiii.allyouradio.Activitys;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
+import android.view.View;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+import co.edu.udem.softwareiii.allyouradio.R;
 
-    //TextView title;
+public class TypeRegister_Activity extends AppCompatActivity implements View.OnClickListener{
+
+    Button btnOyenteRegister, btnEmisoraRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_type_register);
+
+        btnOyenteRegister = (Button)findViewById(R.id.btnOyenteRegister);
+        btnEmisoraRegister = (Button)findViewById(R.id.btnEmisoraRegister);
+
+        btnOyenteRegister.setOnClickListener(this);
+        btnEmisoraRegister.setOnClickListener(this);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_type_register, menu);
         return true;
     }
 
@@ -36,5 +45,23 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+
+        switch (v.getId()){
+
+            case R.id.btnOyenteRegister:
+
+                break;
+
+            case R.id.btnEmisoraRegister:
+
+                break;
+
+
+        }
+
     }
 }
