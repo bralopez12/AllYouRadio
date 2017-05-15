@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView title;
+    //TextView title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
