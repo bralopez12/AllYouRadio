@@ -4,9 +4,75 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="co.edu.udem.softwareiii.allyouradio.Login_Activity">
+    tools:context="co.edu.udem.softwareiii.allyouradio.Login_Activity"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/allyouradio"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="119dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Usuario:"
+        android:id="@+id/tvUsuario"
+        android:layout_above="@+id/etUsuario"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/etUsuario"
+        android:layout_above="@+id/etPassword"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="47dp"
+        android:hint="ej: pepito@correo.com" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Contraseña:"
+        android:id="@+id/tvPassword"
+        android:layout_above="@+id/etPassword"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPassword"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="92dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:id="@+id/btnSingIn"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/tvUsuario" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SING UP"
+        android:id="@+id/btnSingUp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/tvUsuario" />
 
 </RelativeLayout>
