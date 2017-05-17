@@ -1,5 +1,6 @@
 package co.edu.udem.softwareiii.allyouradio.Activitys;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -76,6 +77,10 @@ public class Login_Activity extends AppCompatActivity implements View.OnClickLis
 
 
             case R.id.btnSingUp:
+
+                Intent intent = new Intent(getApplicationContext(),TypeRegister_Activity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                getApplication().startActivity(intent);
 
                 break;
 

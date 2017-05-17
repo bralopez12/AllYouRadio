@@ -9,21 +9,22 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/allyouradio"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".Activitys.MainActivity"
             android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:name=".Activitys.Login_Activity"
+            android:label="@string/title_activity_login_" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".Activitys.Login_Activity"
-            android:label="@string/title_activity_login_" >
         </activity>
         <activity
             android:name=".Activitys.TypeRegister_Activity"
