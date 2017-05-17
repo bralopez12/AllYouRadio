@@ -29,6 +29,10 @@
             android:name=".Activitys.TypeRegister_Activity"
             android:label="@string/title_activity_type_register_" >
         </activity>
+        <activity
+            android:name=".Activitys.RegisterListener_Activity"
+            android:label="@string/title_activity_register_listener_" >
+        </activity>
     </application>
 
 </manifest>

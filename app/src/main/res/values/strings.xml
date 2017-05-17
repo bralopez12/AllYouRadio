@@ -5,4 +5,5 @@
     <string name="action_settings">Acerca de...</string>
     <string name="title_activity_login_">Login_Activity</string>
     <string name="title_activity_type_register_">TypeRegister_Activity</string>
+    <string name="title_activity_register_listener_">RegisterListener_Activity</string>
 </resources>

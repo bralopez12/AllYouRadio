@@ -1,36 +1,52 @@
 package co.edu.udem.softwareiii.allyouradio.Activitys;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
+import android.widget.EditText;
 
 import co.edu.udem.softwareiii.allyouradio.R;
 
-public class TypeRegister_Activity extends AppCompatActivity implements View.OnClickListener{
+public class RegisterListener_Activity extends AppCompatActivity implements View.OnClickListener {
 
-    ImageButton btnOyenteRegister, btnEmisoraRegister;
+
+    EditText etRegisterListener_email,etRegisterListener_name,etRegisterListener_password;
+    Button btnRegister_Listener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_type_register);
+        setContentView(R.layout.activity_register_listener);
 
-        btnOyenteRegister = (ImageButton)findViewById(R.id.btnOyenteRegister);
-        btnEmisoraRegister = (ImageButton)findViewById(R.id.btnEmisoraRegister);
+        etRegisterListener_email = (EditText)findViewById(R.id.etRegisterListener_email);
+        etRegisterListener_name = (EditText)findViewById(R.id.etRegisterListener_name);
+        etRegisterListener_password = (EditText)findViewById(R.id.etRegisterListener_password);
 
-        btnOyenteRegister.setOnClickListener(this);
-        btnEmisoraRegister.setOnClickListener(this);
+        btnRegister_Listener = (Button)findViewById(R.id.btnRegister_listener);
+
+        btnRegister_Listener.setOnClickListener(this);
+
     }
+
+    private boolean ValidarDatosOyente(String email,String nombre,String contraseña){
+
+        return true;
+    }
+
+    private void RegistrarOyente(String email,String nombre,String contraseña){
+
+
+
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_type_register, menu);
+        getMenuInflater().inflate(R.menu.menu_register_listener, menu);
         return true;
     }
 
@@ -54,21 +70,13 @@ public class TypeRegister_Activity extends AppCompatActivity implements View.OnC
 
         switch (v.getId()){
 
-            case R.id.btnOyenteRegister:
-
-                Intent intent = new Intent(getApplicationContext(),RegisterListener_Activity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                getApplication().startActivity(intent);
-
-
-                break;
-
-            case R.id.btnEmisoraRegister:
+            case R.id.btnRegister_listener:
 
                 break;
 
 
         }
+
 
     }
 }
