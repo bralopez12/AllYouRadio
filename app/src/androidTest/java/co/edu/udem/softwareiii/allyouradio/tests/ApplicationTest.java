@@ -7,7 +7,6 @@ import android.test.ApplicationTestCase;
 import co.edu.udem.softwareiii.allyouradio.Activitys.Conexion;
 import co.edu.udem.softwareiii.allyouradio.Activitys.DAO.OyenteDAO;
 import co.edu.udem.softwareiii.allyouradio.Activitys.DTO.OyenteDTO;
-import co.edu.udem.softwareiii.allyouradio.Activitys.Presentacion.RegisterListener_Activity;
 
 /**
  * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>
@@ -28,22 +27,22 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
 
     }
 
-    public void test_validacion_Registro_Oyente(){
+    public void test_insertar_Oyente(){
 
 
-        assertTrue(oyentedao.InsertarOyente(oyenteDTO1));
-        assertTrue(oyentedao.InsertarOyente(oyenteDTO2));
+        assertTrue(oyentedao.insertarOyente(oyenteDTO1));
+        assertTrue(oyentedao.insertarOyente(oyenteDTO2));
 
 
     }
 
-    public void test_validacion_Registro_Oyente2(){
+    public void test_insertar_Oyente2(){
 
         Conexion cn = new Conexion();
         OyenteDAO oyentedao = new OyenteDAO(cn);
 
-        assertTrue(oyentedao.InsertarOyente(oyenteDTO3));
-        assertTrue(oyentedao.InsertarOyente(oyenteDTO4));
+        assertTrue(oyentedao.insertarOyente(oyenteDTO3));
+        assertTrue(oyentedao.insertarOyente(oyenteDTO4));
 
     }
 
@@ -62,17 +61,17 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
     }
 
 
-    public void test_cambio_Contraseña_Oyente(){
+    public void test_Ingresar_Telefono_Oyente(){
 
 
-        assertTrue(oyentedao.IngresarTelefonoOyente(oyenteDTO2));
+        assertTrue(oyentedao.ingresarTelefonoOyente(oyenteDTO2));
 
     }
 
-    public void test_cambio_Contraseña_Oyente2(){
+    public void test_Ingresar_Telefono_Oyente2(){
 
 
-        assertTrue(oyentedao.IngresarTelefonoOyente(oyenteDTO4));
+        assertTrue(oyentedao.ingresarTelefonoOyente(oyenteDTO4));
 
     }
 

@@ -15,7 +15,7 @@ public class OyenteDAO {
         this.cn = cn;
     }
 
-    public OyenteDTO ObtenerOyente(String correo){
+    public OyenteDTO obtenerOyente(String correo){
 
 
         if(correo.isEmpty()){
@@ -30,7 +30,7 @@ public class OyenteDAO {
     }
 
 
-    public boolean InsertarOyente(OyenteDTO oyente){
+    public boolean insertarOyente(OyenteDTO oyente){
 
         if(oyente == null){
             return false;
@@ -48,7 +48,7 @@ public class OyenteDAO {
 
 
 
-    public boolean IngresarTelefonoOyente(OyenteDTO oyente){
+    public boolean ingresarTelefonoOyente(OyenteDTO oyente){
 
         try{
             Integer.parseInt(oyente.getTelefono());
