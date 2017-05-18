@@ -13,7 +13,7 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
         super(Application.class);
     }
 
-    public void test_validacion_Registro_Oyente(){
+    public void validacion_Registro_Oyente_test(){
 
         RegisterListener_Activity ra = new RegisterListener_Activity();
 
@@ -24,7 +24,7 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
 
     }
 
-    public void test_eliminar_Oyente(){
+    public void eliminar_Oyente_test(){
         RegisterListener_Activity ra = new RegisterListener_Activity();
 
         assertTrue(ra.eliminarOyente("bralopez12", "queleimporta"));
@@ -34,7 +34,7 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
     }
 
 
-    public void test_cambio_Contraseña_Oyente(){
+    public void cambio_Contraseña_Oyente_test(){
         RegisterListener_Activity ra = new RegisterListener_Activity();
 
         assertTrue(ra.modificarContraseña("bralopez12", "queleimporta", "lavidaesunjuego"));
