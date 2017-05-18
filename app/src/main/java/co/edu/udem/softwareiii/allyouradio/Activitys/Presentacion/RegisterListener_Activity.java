@@ -1,4 +1,4 @@
-package co.edu.udem.softwareiii.allyouradio.Activitys;
+package co.edu.udem.softwareiii.allyouradio.Activitys.Presentacion;
 
 import android.database.SQLException;
 import android.support.v7.app.AppCompatActivity;
@@ -32,24 +32,6 @@ public class RegisterListener_Activity extends AppCompatActivity implements View
 
     }
 
-    public boolean validarDatosOyente(String email,String nombre,String contraseña){
-
-
-
-        return true;
-    }
-
-
-
-    public boolean eliminarOyente(String email, String contraseña){
-
-        return true;
-    }
-
-    public boolean modificarContraseña(String email, String contraseña, String nuevaContraseña){
-
-        return true;
-    }
 
 
     public boolean onCreateOptionsMenu(Menu menu) {

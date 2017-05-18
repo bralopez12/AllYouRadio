@@ -1,4 +1,4 @@
-package co.edu.udem.softwareiii.allyouradio.Activitys;
+package co.edu.udem.softwareiii.allyouradio.Activitys.Presentacion;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

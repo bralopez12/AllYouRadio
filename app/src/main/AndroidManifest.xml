@@ -13,12 +13,12 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".Activitys.MainActivity"
+            android:name=".Activitys.Presentacion.MainActivity"
             android:label="@string/app_name" >
 
         </activity>
         <activity
-            android:name=".Activitys.Login_Activity"
+            android:name=".Activitys.Presentacion.Login_Activity"
             android:label="@string/title_activity_login_" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,11 +27,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activitys.TypeRegister_Activity"
+            android:name=".Activitys.Presentacion.TypeRegister_Activity"
             android:label="@string/title_activity_type_register_" >
         </activity>
         <activity
-            android:name=".Activitys.RegisterListener_Activity"
+            android:name=".Activitys.Presentacion.RegisterListener_Activity"
             android:label="@string/title_activity_register_listener_" >
         </activity>
     </application>
