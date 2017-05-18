@@ -1,5 +1,6 @@
 package co.edu.udem.softwareiii.allyouradio.Activitys;
 
+import android.database.SQLException;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -31,19 +32,19 @@ public class RegisterListener_Activity extends AppCompatActivity implements View
 
     }
 
-    public boolean ValidarDatosOyente(String email,String nombre,String contraseña){
+    public boolean validarDatosOyente(String email,String nombre,String contraseña){
 
         return true;
     }
 
-    public void RegistrarOyente(String email,String nombre,String contraseña){
+    
 
+    public boolean eliminarOyente(String email, String contraseña){
 
-
+        return false;
     }
 
 
-    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_register_listener, menu);
