@@ -37,11 +37,16 @@ public class RegisterListener_Activity extends AppCompatActivity implements View
         return true;
     }
 
-    
+
 
     public boolean eliminarOyente(String email, String contraseña){
 
-        return false;
+        return true;
+    }
+
+    public boolean modificarContraseña(String email, String contraseña, String nuevaContraseña){
+
+        return true;
     }
 
 

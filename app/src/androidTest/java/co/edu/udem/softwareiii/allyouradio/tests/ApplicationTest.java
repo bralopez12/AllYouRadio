@@ -28,9 +28,19 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
         RegisterListener_Activity ra = new RegisterListener_Activity();
 
         assertTrue(ra.eliminarOyente("bralopez12", "queleimporta"));
-        assertTrue(ra.eliminarOyente("bralopez12@hotmail.com", "teamoyurani"));
+        assertTrue(ra.eliminarOyente("bralopez12@hotmail.com", "teamoyuraniiii")); //prueba mala porque la contraseña es incorrecta
         assertFalse(ra.eliminarOyente("bralopez12@hotmail.com","teamoyurani"));
         assertFalse(ra.eliminarOyente("bralopez12@hotmail.com","Esto es para una nota de 5"));
+    }
+
+
+    public void test_cambio_Contraseña_Oyente(){
+        RegisterListener_Activity ra = new RegisterListener_Activity();
+
+        assertTrue(ra.modificarContraseña("bralopez12", "queleimporta", "lavidaesunjuego"));
+        assertTrue(ra.modificarContraseña("bralopez12@hotmail.com", "teamoyuraniiii", "soyelmejor")); //prueba mala porque la contraseña es incorrecta
+        assertFalse(ra.modificarContraseña("bralopez12@hotmail.com","teamoyurani", "odioatodoelmundo"));
+        assertFalse(ra.modificarContraseña("bralopez12@hotmail.com","Esto es para una nota de 5", "no jodan mas"));
     }
 
 
