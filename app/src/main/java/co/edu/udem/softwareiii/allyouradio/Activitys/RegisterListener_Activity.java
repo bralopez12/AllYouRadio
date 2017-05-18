@@ -31,12 +31,12 @@ public class RegisterListener_Activity extends AppCompatActivity implements View
 
     }
 
-    private boolean ValidarDatosOyente(String email,String nombre,String contraseña){
+    public boolean ValidarDatosOyente(String email,String nombre,String contraseña){
 
         return true;
     }
 
-    private void RegistrarOyente(String email,String nombre,String contraseña){
+    public void RegistrarOyente(String email,String nombre,String contraseña){
 
 
 
